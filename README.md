@@ -1,6 +1,6 @@
-# make-knowledge-cards
+# article-to-knowledge-cards
 
-一个 Codex Skill：把文章转成**可核查**的知识卡片。
+一个 Codex Skill（技能名 `make-knowledge-cards`）：把文章转成**可核查**的知识卡片。
 
 ## 1. 项目解决什么问题
 
@@ -35,7 +35,7 @@
 
 Skill 的载体就是 `SKILL.md`，安装等于把它放到 Codex 会扫描的技能目录下：
 
-1. 取得本目录：`skills/make-knowledge-cards/`（含 `SKILL.md`、`agents/openai.yaml`、`references/CHECKLIST.md`）。
+1. 取得本目录：`skills/make-knowledge-cards/`（含 `SKILL.md`、`agents/openai.yaml`、`references/CHECKLIST.md`）。可以直接 `git clone https://github.com/reieve2/article-to-knowledge-cards`，或只下载这个子目录。
 2. 放到技能根目录之一：
    - 用户级：`C:\Users\<你>\.codex\skills\make-knowledge-cards\`（个人全局可用）；
    - 项目级：`<项目>\.agents\skills\make-knowledge-cards\`（只在该项目内可用）。
@@ -44,7 +44,7 @@ Skill 的载体就是 `SKILL.md`，安装等于把它放到 Codex 会扫描的�
 
 需要说明的三点，避免误解：
 
-- 本仓库**不含** `quick_validate.py`（它随 Codex 的 skill-creator 提供）、不含安装脚本、不含 Git 仓库、也没有上架任何市场——所以没有 `npm install` 之类的安装命令，也不需要。
+- 本仓库**不含** `quick_validate.py`（它随 Codex 的 skill-creator 提供）、不含安装脚本、也没有上架任何市场——所以没有 `npm install` 之类的安装命令，也不需要。仓库本身托管在 GitHub，克隆或下载下来就能用，不存在需要执行的构建步骤。
 - `references/CHECKLIST.md` 是评审用的第二层材料，**可选**：不复制它，Skill 仍然可用，只是人工复核时少一份门槛清单。但 SKILL.md 正文有引用它，建议一起复制。
 - 上面走的是 Codex 的目录约定；是否能被其他 agent 运行时识别，取决于该运行时自己的技能机制——本仓库没有对它们做过验证。
 
