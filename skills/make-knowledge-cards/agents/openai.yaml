@@ -1,0 +1,3 @@
+interface:
+  display_name: "Make Knowledge Cards"
+  short_description: "Source-grounded cards from articles, URLs, and Markdown/TXT"
